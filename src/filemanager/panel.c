@@ -2891,8 +2891,8 @@ start_search (WPanel * panel)
     {
         panel->quick_search.active = TRUE;
         g_string_set_size (panel->quick_search.buffer, 0);
-        panel->quick_search.ch[0] = '\0';
-        panel->quick_search.chpoint = 0;
+        panel->quick_search.ch[0] = '*';
+        panel->quick_search.chpoint = 1;
         display_mini_info (panel);
     }
 }
